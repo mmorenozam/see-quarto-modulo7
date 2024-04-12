@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html#introducción",
+    "href": "index.html#introducción",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Introducción",
+    "text": "Introducción\n\n\nQuarto fue lanzado en el 2022.\nComo tal, es un software bastante reciente y aún no existen manuales completos acerca de su uso (si has usado rmarkdown la curva de aprendizaje es particularmente sencilla).\nSin embargo, no es difícil encontrar una considerable cantidad de material creado tanto por POSIT (la empresa responsable de su desarrollo) como por usuarios particulares.\nEn ambos casos, la mejor manera de aprender sus usos (al menos hasta el momento), es explorando el código fuente de documentos disponibles en el internet hechos en Quarto.\n¿En donde encontramos estos códigos fuente?\nGithub"
+  },
+  {
+    "objectID": "index.html#github",
+    "href": "index.html#github",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Github",
+    "text": "Github"
+  },
+  {
+    "objectID": "index.html#introducción-a-github",
+    "href": "index.html#introducción-a-github",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Introducción a Github",
+    "text": "Introducción a Github"
+  },
+  {
+    "objectID": "index.html#introducción-a-github-1",
+    "href": "index.html#introducción-a-github-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Introducción a Github",
+    "text": "Introducción a Github\n\n\nGithub es una plataforma para desarrolladores de software que ofrece las funcionalidades de almacenar, manejar y compartir código.\nSe basa en el uso del software Git.\nInstalar Git y configurar su uso con RStudio y una cuenta de Github es un proceso relativamente sencillo. Así que iremos paso por paso."
+  },
+  {
+    "objectID": "index.html#paso-1-creando-una-cuenta-de-github",
+    "href": "index.html#paso-1-creando-una-cuenta-de-github",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 1: Creando una cuenta de Github",
+    "text": "Paso 1: Creando una cuenta de Github\n\n\nEntramos a la página web de Github: https://github.com/\nClick en Sign up:\n\nIngresamos nuestro correo electrónico\nCreamos una contraseña\nCreamos un nombre de usuario\n\nLuego nos pedirá autentificar nuestra cuenta (resolver un reto).\nRecibirás un código al correo que utilizaste para verificar tu cuenta.\nYa verificada la cuenta, podemos saltarnos la personalización.\n¡Listo!"
+  }
+]
