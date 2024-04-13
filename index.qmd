@@ -50,9 +50,11 @@ format:
 
 -   Instalar Git y configurar su uso con RStudio y una cuenta de Github es un proceso relativamente sencillo. Así que iremos paso por paso.
 
+-   Por el momento cierra RStudio.
+
 :::
 
-## Paso 1: Creando una cuenta de Github 
+## Paso 1: Creando una cuenta de Github {.smaller}
 
 ::: incremental
 
@@ -77,7 +79,7 @@ format:
 
 ## {background-image="images/github_page.png" background-size="1800px"}
 
-## Paso 2: Instala Git 
+## Paso 2: Instala Git {.smaller}
 
 ::: incremental
 
@@ -85,6 +87,19 @@ format:
 
 -   Click en *Downloads*
 
+-   Escoge tu sistema operativo y tipo de procesador (la última versión de R solo es compatible con computadores 64 bit).
+
+-   Descarga y ejecuta el archivo .exe (Git-2.44.0-64-bit.exe)
+
+-   Sigue el menú de instalación SIN cambiar las opciones predeterminadas
+
+:::
+
+## Paso 3: Verifica que Git se instaló
+
+::: incremental
+
+-   Para verificar
 
 
 :::
