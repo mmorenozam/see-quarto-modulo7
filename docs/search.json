@@ -46,6 +46,216 @@
     "href": "index.html#paso-3-verifica-que-git-se-instaló",
     "title": "Módulo 7: La versatilidad de Quarto",
     "section": "Paso 3: Verifica que Git se instaló",
-    "text": "Paso 3: Verifica que Git se instaló\n\n\nPara verificar"
+    "text": "Paso 3: Verifica que Git se instaló\n\nPara verificar, abre Rstudio y sigue Tools &gt; Global Options &gt; Git/SVN"
+  },
+  {
+    "objectID": "index.html#paso-3-verifica-que-git-se-instaló-1",
+    "href": "index.html#paso-3-verifica-que-git-se-instaló-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 3: Verifica que Git se instaló",
+    "text": "Paso 3: Verifica que Git se instaló\n\nAdicionalmente, deberá aparecer en la barra de acciones este ícono:\n\n\n\nEn caso de que no aparezcan Git ni en las Opciones Globales o en la barra de acciones, desinstala Git y vuélvelo a instalar."
+  },
+  {
+    "objectID": "index.html#paso-4-pero-funciona",
+    "href": "index.html#paso-4-pero-funciona",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 4: Pero, ¿funciona?",
+    "text": "Paso 4: Pero, ¿funciona?\n\nVamos a clonar un repositorio de Github creando un proyecto\nPara ello, escogemos la opción de Version Control"
+  },
+  {
+    "objectID": "index.html#paso-4-pero-funciona-1",
+    "href": "index.html#paso-4-pero-funciona-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 4: Pero, ¿funciona?",
+    "text": "Paso 4: Pero, ¿funciona?\n\nEscogemos la opción Git"
+  },
+  {
+    "objectID": "index.html#paso-4-pero-funciona-2",
+    "href": "index.html#paso-4-pero-funciona-2",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 4: Pero, ¿funciona?",
+    "text": "Paso 4: Pero, ¿funciona?\n\nEn el URL vamos a pegar este URL: https://github.com/mmorenozam/plantilla-tesis\nEscogemos la ubicación en nuestro computador y hacemos click en Create Project y ¡listo!"
+  },
+  {
+    "objectID": "index.html#hasta-el-momento",
+    "href": "index.html#hasta-el-momento",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Hasta el momento…",
+    "text": "Hasta el momento…\n\n\nHemos (espero) creado exitosamente una cuenta en Github e instalado Git en nuestros computadores.\nTenemos la posibilidad de clonar repositorios existentes.\nSin embargo, estamos solo a medio camino de explotar un poco más las ventajas de Github (no podemos aún crear, manejar y empujar nuestros propios proyectos en Github).\nPara esto, nos falta vincular nuestra cuenta de Github con RStudio.\nSin embargo, haremos una pausa para ver el repositorio que hemos clonado."
+  },
+  {
+    "objectID": "index.html#paso-5-vinculando-github-con-rstudio",
+    "href": "index.html#paso-5-vinculando-github-con-rstudio",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 5: Vinculando Github con RStudio",
+    "text": "Paso 5: Vinculando Github con RStudio\n\nUna vez que ingreses a tu cuenta, directamente te aparecerá la opción de crear un token:\n\n\n\n\nPuedes escoger el tiempo de expiración del mismo\n\n\n\n\nClick en Generate token"
+  },
+  {
+    "objectID": "index.html#paso-5-vinculando-github-con-rstudio-1",
+    "href": "index.html#paso-5-vinculando-github-con-rstudio-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 5: Vinculando Github con RStudio",
+    "text": "Paso 5: Vinculando Github con RStudio\n\nTu token se mostrará en la pantalla con la opción de copiarlo\n\n\n\n\nEsta es la UNICA vez que tendrás el chance de verlo.\nCópialo por el momento en un block de notas.\nSi no lo copias en esta única oportunidad, tendrás que generar otro."
+  },
+  {
+    "objectID": "index.html#paso-5-vinculando-github-con-rstudio-2",
+    "href": "index.html#paso-5-vinculando-github-con-rstudio-2",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 5: Vinculando Github con RStudio",
+    "text": "Paso 5: Vinculando Github con RStudio\n\nAhora que tienes tu token a salvo, ha llegado el paso final:\n\n\ngitcreds::gitcreds_set() \n\n\n\nSi es la primera vez que estás vinculando Github con RStudio, te aparecerá lo siguiente:\n\n\n\n\n\n\n\nPega tu token y enter."
+  },
+  {
+    "objectID": "index.html#paso-5-vinculando-github-con-rstudio-3",
+    "href": "index.html#paso-5-vinculando-github-con-rstudio-3",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 5: Vinculando Github con RStudio",
+    "text": "Paso 5: Vinculando Github con RStudio\n\nAhora que tienes tu token a salvo, ha llegado el paso final:\n\n\ngitcreds::gitcreds_set() \n\n\n\nSi es la primera vez que estás vinculando Github con RStudio, te aparecerá lo siguiente:\n\n\n\n\n\n\n\nPega tu token y enter."
+  },
+  {
+    "objectID": "index.html#paso-6-comprobando-que-todo-salió-bien",
+    "href": "index.html#paso-6-comprobando-que-todo-salió-bien",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 6: Comprobando que todo salió bien",
+    "text": "Paso 6: Comprobando que todo salió bien\n\nReinicia R una vez más y ejecuta en la consola:\n\n\nusethis::gh_token_help()\n\n\n\nDeberá aparecerte algo similar a esto:"
+  },
+  {
+    "objectID": "index.html#nuestra-primera-página-web-con-quarto",
+    "href": "index.html#nuestra-primera-página-web-con-quarto",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Nuestra primera página web con Quarto",
+    "text": "Nuestra primera página web con Quarto\n\n\nCómo te habrás dado cuenta, lo más difícil hasta el momento ha sido el vincular correctamente Github con RStudio.\nUna vez que lo hemos hecho, vamos a crear nuestra primera página web usando Quarto."
+  },
+  {
+    "objectID": "index.html#escribiendo-una-tesis-de-grado-en-quarto",
+    "href": "index.html#escribiendo-una-tesis-de-grado-en-quarto",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Escribiendo una tesis de grado en Quarto",
+    "text": "Escribiendo una tesis de grado en Quarto\n\n\nEl repositorio que acabamos de clonar, contiene un template para llevar a cabo una tesis de grado.\nRealicé este template en base de la extensión quarto-thesis de autoría de Eli Holmes.\nUsando este template ya seremos capaces de redactar una tesis con:\n\nlos nombres de sección traducidos al español\nbibliografía en formato APA\níndice, listas de figuras, listas de tablas, abreviaciones etc, generadas automáticamente en Quarto.\n\nUsa las funcionalidades de \\(\\LaTeX{}\\) para generar formatos elegantes y agradables a la vista, así como su muy eficiente indexación.\n\n\n\n\nRequisitos:\n\nQuarto version 1.3.450 (Llas más recientes contienen “bugs” que evitan una renderización adecuada).\nTinytex\n(Idealmente) un mínimo conocimiento de edición de texto en \\(\\LaTeX{}\\)"
+  },
+  {
+    "objectID": "index.html#vinculando-github-con-rstudio",
+    "href": "index.html#vinculando-github-con-rstudio",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Vinculando Github con RStudio",
+    "text": "Vinculando Github con RStudio\n\n\nRetomando, hasta el momento hemos instalado y configurado lo necesario tan solo para clonar repositorios.\nEn el pasado, vincular Github con RStudio requería el ingresar comandos en el Terminal para configurar Git.\nAfortunadamente, hoy por hoy podemos hacer uso de librerías que nos facilitan el proceso desde la consola de RStudio.\nPara esto, comenzamos instalando las librerías: install.packages(c(\"usethis\", \"gitcreds\", \"oskeyring\"))."
+  },
+  {
+    "objectID": "index.html#paso-1-vinculando-github-con-rstudio",
+    "href": "index.html#paso-1-vinculando-github-con-rstudio",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 1: Vinculando Github con RStudio",
+    "text": "Paso 1: Vinculando Github con RStudio\n\nUna vez que ingreses a tu cuenta, directamente te aparecerá la opción de crear un token:\n\n\n\n\nPuedes escoger el tiempo de expiración del mismo\n\n\n\n\nClick en Generate token"
+  },
+  {
+    "objectID": "index.html#paso-1-creando-credenciales",
+    "href": "index.html#paso-1-creando-credenciales",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 1: Creando credenciales",
+    "text": "Paso 1: Creando credenciales\n\n\nAhora, lo primero que haremos es configurar Git para que sepa la cuenta a vincular.\nReiniciamos RStudio y pegamos el siguiente comando en la consola:\n\n\n\n\nusethis::use_git_config(user.name = \"TuNombreDeUsuario\", user.email = \"tu@email.com\")\n\n\n\n\n\nEl siguiente paso es crear un token personal:\n\n\n\n\n\nusethis::create_github_token() \n\n\nEste comando abrirá una página en tu navegador para que ingreses a Github con la cuenta que creaste"
+  },
+  {
+    "objectID": "index.html#paso-1-vinculando-github-con-rstudio-1",
+    "href": "index.html#paso-1-vinculando-github-con-rstudio-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 1: Vinculando Github con RStudio",
+    "text": "Paso 1: Vinculando Github con RStudio\n\nTu token se mostrará en la pantalla con la opción de copiarlo\n\n\n\n\nEsta es la UNICA vez que tendrás el chance de verlo.\nCópialo por el momento en un block de notas.\nSi no lo copias en esta única oportunidad, tendrás que generar otro."
+  },
+  {
+    "objectID": "index.html#paso-2-creando-el-vínculo",
+    "href": "index.html#paso-2-creando-el-vínculo",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 2: Creando el vínculo",
+    "text": "Paso 2: Creando el vínculo\n\nAhora que tienes tu token a salvo, es momento de vincular RStudio a tu cuenta de Github\n\n\ngitcreds::gitcreds_set() \n\n\n\nSi es la primera vez que estás vinculando Github con RStudio, te aparecerá lo siguiente:\n\n\n\n\n\n\n\nPega tu token y enter."
+  },
+  {
+    "objectID": "index.html#paso-3-pero-funciona",
+    "href": "index.html#paso-3-pero-funciona",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 3: Pero, ¿funciona?",
+    "text": "Paso 3: Pero, ¿funciona?\n\nReinicia R una vez más y ejecuta en la consola:\n\n\nusethis::gh_token_help()\n\n\n\nDeberá aparecerte algo similar a esto:"
+  },
+  {
+    "objectID": "index.html#paso-4-pero-realmente-funciona",
+    "href": "index.html#paso-4-pero-realmente-funciona",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 4: Pero, ¿realmente funciona?",
+    "text": "Paso 4: Pero, ¿realmente funciona?\n\nDe vuelta en RStudio, crearemos"
+  },
+  {
+    "objectID": "index.html#paso-4-pero-realmente-funciona-1",
+    "href": "index.html#paso-4-pero-realmente-funciona-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 4: Pero, ¿realmente funciona?",
+    "text": "Paso 4: Pero, ¿realmente funciona?\n\nUna vez que le hayas dado un nombre a tu nuevo repositorio y dado click en Create repository, verás algo como:"
+  },
+  {
+    "objectID": "index.html#empujando-nuestro-primer-repositorio",
+    "href": "index.html#empujando-nuestro-primer-repositorio",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Empujando nuestro primer repositorio",
+    "text": "Empujando nuestro primer repositorio\n\n\nLa mejor manera de comprobar que el vínculo/conexión entre tu RStudio y tu cuenta de Github, es “empujando” un repositorio en tu cuenta de Github.\nEn resumen, lo que haremos es crear manualmente un repositorio vacío en Github y luego lo “poblaremos” con un projecto de RStudio (específicamente uno de Quarto).\nPara esto, puedes utilizar el repositorio con el template de la tesis que anteriormente clonamos (desde el paso 3) o hacerlo siguiendo los pasos desde el principio que mostraré a continuación."
+  },
+  {
+    "objectID": "index.html#paso-1-creando-un-repositorio-vacío-en-github",
+    "href": "index.html#paso-1-creando-un-repositorio-vacío-en-github",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 1: Creando un repositorio vacío en Github",
+    "text": "Paso 1: Creando un repositorio vacío en Github\n\nEn tu cuenta de Github: Click en la foto de tu avatar &gt; Your repositories &gt; New. Deberás llegar a una vista como la siguiente:"
+  },
+  {
+    "objectID": "index.html#paso-1-creando-un-repositorio-vacío-en-github-1",
+    "href": "index.html#paso-1-creando-un-repositorio-vacío-en-github-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 1: Creando un repositorio vacío en Github",
+    "text": "Paso 1: Creando un repositorio vacío en Github\n\nUna vez que le hayas dado un nombre a tu nuevo repositorio y dado click en Create repository, verás algo como:"
+  },
+  {
+    "objectID": "index.html#paso-2-creando-un-proyecto-para-empujar",
+    "href": "index.html#paso-2-creando-un-proyecto-para-empujar",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 2: Creando un proyecto para empujar",
+    "text": "Paso 2: Creando un proyecto para empujar\n\nDe vuelta en RStudio, crearemos un proyecto de Quarto\nAsegúrate que la opción de Create a git repository esté marcada"
+  },
+  {
+    "objectID": "index.html#paso-3-empujando-un-proyecto-a-github-por-primera-vez",
+    "href": "index.html#paso-3-empujando-un-proyecto-a-github-por-primera-vez",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 3: Empujando un proyecto a Github por primera vez",
+    "text": "Paso 3: Empujando un proyecto a Github por primera vez\n\n\nUna vez creado el proyecto, tenemos dos opciones para empujar nuestro repositorio:\n\nUsando únicamente el terminal\nUsando la GUI de RStudio y el terminal\n\nEn ambas opciones la lógica es “add/stage” los cambios, “commit”, definir el origen y “push” (empujar)."
+  },
+  {
+    "objectID": "index.html#paso-3.1-empujando-desde-el-terminal",
+    "href": "index.html#paso-3.1-empujando-desde-el-terminal",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 3.1: Empujando desde el terminal",
+    "text": "Paso 3.1: Empujando desde el terminal\n\nEn el terminal empezaremos ingresando los siguientes comandos\n\n\ngit add .\ngit commit -m \"un comentario\"\n\n\nDe vuelta en el repositorio vacío que creamos, copia los comandos indicados abajo y pégalos de vuelta en el terminal de R:"
+  },
+  {
+    "objectID": "index.html#paso-3.1-empujando-desde-el-terminal-1",
+    "href": "index.html#paso-3.1-empujando-desde-el-terminal-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 3.1: Empujando desde el terminal",
+    "text": "Paso 3.1: Empujando desde el terminal\n\nSi todo salió bien, verás en el terminal algo como:"
+  },
+  {
+    "objectID": "index.html#paso-3.2-empujando-con-la-gui-y-el-terminal",
+    "href": "index.html#paso-3.2-empujando-con-la-gui-y-el-terminal",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 3.2: Empujando con la GUI y el terminal",
+    "text": "Paso 3.2: Empujando con la GUI y el terminal\n\nEn la GUI de RStudio, puedes notar que en la ventana del ambiente tienes las siguientes opciones:\n\n\n\n\n\nEl procedimiento a seguir aquí es: click en Commit&gt;Seleccionar todos los archivos en la ventana que se abre&gt;Stage&gt;Añadir un comentario&gt;Commit.\nEsto es equivalente a los comandos git add . y git commit -m \"un comentario\" que usamos anteriormente.\nDe aquí, copiamos los comandos del repositorio vacío que anteriormente creamos, y los pegamos en la terminal."
+  },
+  {
+    "objectID": "index.html#paso-4-nuestro-repositorio-está-listo",
+    "href": "index.html#paso-4-nuestro-repositorio-está-listo",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Paso 4: ¡Nuestro repositorio está listo!",
+    "text": "Paso 4: ¡Nuestro repositorio está listo!\n\nCualquiera haya sido tu opción de empujar, una vez que refresques el navegador el repositorio que creaste ya no estará vacío, y verás algo como:"
+  },
+  {
+    "objectID": "index.html#actualizando-nuestro-repositorio",
+    "href": "index.html#actualizando-nuestro-repositorio",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Actualizando nuestro repositorio",
+    "text": "Actualizando nuestro repositorio\n\n\nEl procedimiento que acabamos de ver es necesario únicamente para la primera vez que empujamos al repositorio.\n\n\n\nEs decir, ya no necesitamos llevar a cabo la conexión entre nuestro repositorio local y el de Github.\nBasta entonces usar de aquí en adelante la GUI de RStudio, o comandos en la terminal.\nPara usar la GUI, al procedimiento anterior, lo terminamos haciendo click en Push (en la ventana de ambiente de Git).\nPara usar la terminal, cada vez que desees actualizar tu repositorio en Github, puedes usar estos comandos directamente en la terminal:\n\n\n\n\ngit add .\ngit commit -m \"un comentario\"\ngit push"
   }
 ]

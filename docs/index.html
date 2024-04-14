@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="styles.css">
@@ -402,9 +467,316 @@ Mauricio Moreno, PhD
 </section>
 <section id="paso-3-verifica-que-git-se-instaló" class="slide level2">
 <h2>Paso 3: Verifica que Git se instaló</h2>
+<ul>
+<li>Para verificar, abre Rstudio y sigue <em>Tools</em> &gt; <em>Global Options</em> &gt; <em>Git/SVN</em></li>
+</ul>
+
+<img data-src="images/verifica.png" class="r-stretch quarto-figure-center"></section>
+<section id="paso-3-verifica-que-git-se-instaló-1" class="slide level2" data-visibility="uncounted">
+<h2>Paso 3: Verifica que Git se instaló</h2>
+<ul>
+<li>Adicionalmente, deberá aparecer en la barra de acciones este ícono:</li>
+</ul>
+
+<img data-src="images/git_r.png" class="r-stretch quarto-figure-center"><ul>
+<li>En caso de que no aparezcan Git ni en las Opciones Globales o en la barra de acciones, desinstala Git y vuélvelo a instalar.</li>
+</ul>
+</section>
+<section id="paso-4-pero-funciona" class="slide level2">
+<h2>Paso 4: Pero, ¿funciona?</h2>
+<ul>
+<li><p>Vamos a clonar un repositorio de Github creando un proyecto</p></li>
+<li><p>Para ello, escogemos la opción de <em>Version Control</em></p></li>
+</ul>
+
+<img data-src="images/paso1.png" class="r-stretch quarto-figure-center"></section>
+<section id="paso-4-pero-funciona-1" class="slide level2" data-visibility="uncounted">
+<h2>Paso 4: Pero, ¿funciona?</h2>
+<ul>
+<li>Escogemos la opción Git</li>
+</ul>
+
+<img data-src="images/paso2.png" class="r-stretch quarto-figure-center"></section>
+<section id="paso-4-pero-funciona-2" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Paso 4: Pero, ¿funciona?</h2>
+<ul>
+<li><p>En el URL vamos a pegar este URL: https://github.com/mmorenozam/plantilla-tesis</p></li>
+<li><p>Escogemos la ubicación en nuestro computador y hacemos click en <em>Create Project</em> y ¡listo!</p></li>
+</ul>
+
+<img data-src="images/paso3.png" class="r-stretch quarto-figure-center"></section>
+<section id="hasta-el-momento" class="slide level2">
+<h2>Hasta el momento…</h2>
 <div>
 <ul>
-<li class="fragment">Para verificar</li>
+<li class="fragment"><p>Hemos (espero) creado exitosamente una cuenta en Github e instalado Git en nuestros computadores.</p></li>
+<li class="fragment"><p>Tenemos la posibilidad de clonar repositorios existentes.</p></li>
+<li class="fragment"><p>Sin embargo, estamos solo a medio camino de explotar un poco más las ventajas de Github (no podemos aún crear, manejar y <em>empujar</em> nuestros propios proyectos en Github).</p></li>
+<li class="fragment"><p>Para esto, nos falta vincular nuestra cuenta de Github con RStudio.</p></li>
+<li class="fragment"><p>Sin embargo, haremos una pausa para ver el repositorio que hemos clonado.</p></li>
+</ul>
+</div>
+</section>
+<section id="escribiendo-una-tesis-de-grado-en-quarto" class="slide level2 smaller">
+<h2>Escribiendo una tesis de grado en Quarto</h2>
+<div>
+<ul>
+<li class="fragment"><p>El repositorio que acabamos de clonar, contiene un template para llevar a cabo una tesis de grado.</p></li>
+<li class="fragment"><p>Realicé este template en base de la extensión <code>quarto-thesis</code> de autoría de <a href="https://github.com/eeholmes" target="_blank">Eli Holmes</a>.</p></li>
+<li class="fragment"><p>Usando este template ya seremos capaces de redactar una tesis con:</p>
+<ul>
+<li class="fragment"><p>los nombres de sección traducidos al español</p></li>
+<li class="fragment"><p>bibliografía en formato APA</p></li>
+<li class="fragment"><p>índice, listas de figuras, listas de tablas, abreviaciones etc, generadas automáticamente en Quarto.</p></li>
+</ul></li>
+<li class="fragment"><p>Usa las funcionalidades de <span class="math inline">\(\LaTeX{}\)</span> para generar formatos elegantes y agradables a la vista, así como su muy eficiente indexación.</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Requisitos:</p>
+<ul>
+<li><p>Quarto version 1.3.450 (Llas más recientes contienen “bugs” que evitan una renderización adecuada).</p></li>
+<li><p>Tinytex</p></li>
+<li><p>(Idealmente) un mínimo conocimiento de edición de texto en <span class="math inline">\(\LaTeX{}\)</span></p></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section>
+<section id="manos-a-la-obra" class="title-slide slide level1 center">
+<h1>¡Manos a la Obra!</h1>
+
+</section>
+<section id="vinculando-github-con-rstudio" class="slide level2">
+<h2>Vinculando Github con RStudio</h2>
+<div>
+<ul>
+<li class="fragment"><p>Retomando, hasta el momento hemos instalado y configurado lo necesario tan solo para clonar repositorios.</p></li>
+<li class="fragment"><p>En el pasado, vincular Github con RStudio requería el ingresar comandos en el Terminal para configurar Git.</p></li>
+<li class="fragment"><p>Afortunadamente, hoy por hoy podemos hacer uso de librerías que nos facilitan el proceso desde la consola de RStudio.</p></li>
+<li class="fragment"><p>Para esto, comenzamos instalando las librerías: <code>install.packages(c("usethis", "gitcreds", "oskeyring"))</code>.</p></li>
+</ul>
+</div>
+</section>
+<section id="paso-1-creando-credenciales" class="slide level2 smaller">
+<h2>Paso 1: Creando credenciales</h2>
+<div>
+<ul>
+<li class="fragment"><p>Ahora, lo primero que haremos es configurar Git para que sepa la cuenta a vincular.</p></li>
+<li class="fragment"><p>Reiniciamos RStudio y pegamos el siguiente comando en la consola:</p></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"TuNombreDeUsuario"</span>, <span class="at">user.email =</span> <span class="st">"tu@email.com"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="fragment">
+<div>
+<ul>
+<li class="fragment">El siguiente paso es crear un token personal:</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Este comando abrirá una página en tu navegador para que ingreses a Github con la cuenta que creaste</li>
+</ul>
+</div>
+</section>
+<section id="paso-1-vinculando-github-con-rstudio" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Paso 1: Vinculando Github con RStudio</h2>
+<ul>
+<li>Una vez que ingreses a tu cuenta, directamente te aparecerá la opción de crear un token:</li>
+</ul>
+
+<img data-src="images/git2.png" class="r-stretch quarto-figure-center"><div class="fragment">
+<ul>
+<li>Puedes escoger el tiempo de expiración del mismo</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Click en <em>Generate token</em></li>
+</ul>
+</div>
+</section>
+<section id="paso-1-vinculando-github-con-rstudio-1" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Paso 1: Vinculando Github con RStudio</h2>
+<ul>
+<li>Tu token se mostrará en la pantalla con la opción de copiarlo</li>
+</ul>
+
+<img data-src="images/git3.png" class="r-stretch quarto-figure-center"><div class="fragment">
+<ul>
+<li><p>Esta es la UNICA vez que tendrás el chance de verlo.</p></li>
+<li><p>Cópialo por el momento en un block de notas.</p></li>
+<li><p>Si no lo copias en esta única oportunidad, tendrás que generar otro.</p></li>
+</ul>
+</div>
+</section>
+<section id="paso-2-creando-el-vínculo" class="slide level2 smaller">
+<h2>Paso 2: Creando el vínculo</h2>
+<ul>
+<li>Ahora que tienes tu token a salvo, es momento de vincular RStudio a tu cuenta de Github</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li>Si es la primera vez que estás vinculando Github con RStudio, te aparecerá lo siguiente:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/git4.png"></p>
+</figure>
+</div>
+<ul>
+<li>Pega tu token y enter.</li>
+</ul>
+</div>
+</section>
+<section id="paso-3-pero-funciona" class="slide level2">
+<h2>Paso 3: Pero, ¿funciona?</h2>
+<ul>
+<li>Reinicia R una vez más y ejecuta en la consola:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>usethis<span class="sc">::</span><span class="fu">gh_token_help</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li>Deberá aparecerte algo similar a esto:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/git5.png"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="empujando-nuestro-primer-repositorio" class="slide level2">
+<h2>Empujando nuestro primer repositorio</h2>
+<div>
+<ul>
+<li class="fragment"><p>La mejor manera de comprobar que el vínculo/conexión entre tu RStudio y tu cuenta de Github, es “empujando” un repositorio en tu cuenta de Github.</p></li>
+<li class="fragment"><p>En resumen, lo que haremos es crear manualmente un repositorio vacío en Github y luego lo “poblaremos” con un projecto de RStudio (específicamente uno de Quarto).</p></li>
+<li class="fragment"><p>Para esto, puedes utilizar el repositorio con el template de la tesis que anteriormente clonamos (desde el paso 3) o hacerlo siguiendo los pasos desde el principio que mostraré a continuación.</p></li>
+</ul>
+</div>
+</section>
+<section id="paso-1-creando-un-repositorio-vacío-en-github" class="slide level2 smaller">
+<h2>Paso 1: Creando un repositorio vacío en Github</h2>
+<ul>
+<li>En tu cuenta de Github: Click en la foto de tu avatar &gt; <em>Your repositories</em> &gt; <em>New</em>. Deberás llegar a una vista como la siguiente:</li>
+</ul>
+
+<img data-src="images/repo1.png" class="r-stretch quarto-figure-center"></section>
+<section id="paso-1-creando-un-repositorio-vacío-en-github-1" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Paso 1: Creando un repositorio vacío en Github</h2>
+<ul>
+<li>Una vez que le hayas dado un nombre a tu nuevo repositorio y dado click en <em>Create repository</em>, verás algo como:</li>
+</ul>
+
+<img data-src="images/repo2.png" class="r-stretch quarto-figure-center"></section>
+<section id="paso-2-creando-un-proyecto-para-empujar" class="slide level2 smaller">
+<h2>Paso 2: Creando un proyecto para empujar</h2>
+<ul>
+<li><p>De vuelta en RStudio, crearemos un proyecto de Quarto</p></li>
+<li><p>Asegúrate que la opción de <em>Create a git repository</em> esté marcada</p></li>
+</ul>
+
+<img data-src="images/repo3.png" class="r-stretch quarto-figure-center"></section>
+<section id="paso-3-empujando-un-proyecto-a-github-por-primera-vez" class="slide level2">
+<h2>Paso 3: Empujando un proyecto a Github por primera vez</h2>
+<div>
+<ul>
+<li class="fragment"><p>Una vez creado el proyecto, tenemos dos opciones para empujar nuestro repositorio:</p>
+<ul>
+<li class="fragment"><p>Usando únicamente el terminal</p></li>
+<li class="fragment"><p>Usando la GUI de RStudio y el terminal</p></li>
+</ul></li>
+<li class="fragment"><p>En ambas opciones la lógica es “add/stage” los cambios, “commit”, definir el origen y “push” (empujar).</p></li>
+</ul>
+</div>
+</section>
+<section id="paso-3.1-empujando-desde-el-terminal" class="slide level2 smaller">
+<h2>Paso 3.1: Empujando desde el terminal</h2>
+<ul>
+<li>En el terminal empezaremos ingresando los siguientes comandos</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>git add .</span>
+<span id="cb5-2"><a href="#cb5-2"></a>git commit <span class="sc">-</span>m <span class="st">"un comentario"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>De vuelta en el repositorio vacío que creamos, copia los comandos indicados abajo y pégalos de vuelta en el terminal de R:</li>
+</ul>
+
+<img data-src="images/repo4.png" class="r-stretch quarto-figure-center"></section>
+<section id="paso-3.1-empujando-desde-el-terminal-1" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Paso 3.1: Empujando desde el terminal</h2>
+<ul>
+<li>Si todo salió bien, verás en el terminal algo como:</li>
+</ul>
+
+<img data-src="images/repo5.png" class="r-stretch quarto-figure-center"></section>
+<section id="paso-3.2-empujando-con-la-gui-y-el-terminal" class="slide level2 smaller">
+<h2>Paso 3.2: Empujando con la GUI y el terminal</h2>
+<ul>
+<li>En la GUI de RStudio, puedes notar que en la ventana del ambiente tienes las siguientes opciones:</li>
+</ul>
+
+<img data-src="images/repo7.png" class="r-stretch quarto-figure-center"><div class="fragment">
+<div>
+<ul>
+<li class="fragment"><p>El procedimiento a seguir aquí es: click en <em>Commit</em>&gt;Seleccionar todos los archivos en la ventana que se abre&gt;<em>Stage</em>&gt;Añadir un comentario&gt;<em>Commit</em>.</p></li>
+<li class="fragment"><p>Esto es equivalente a los comandos <code>git add .</code> y <code>git commit -m "un comentario"</code> que usamos anteriormente.</p></li>
+<li class="fragment"><p>De aquí, copiamos los comandos del repositorio vacío que anteriormente creamos, y los pegamos en la terminal.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="paso-4-nuestro-repositorio-está-listo" class="slide level2 smaller">
+<h2>Paso 4: ¡Nuestro repositorio está listo!</h2>
+<ul>
+<li>Cualquiera haya sido tu opción de empujar, una vez que refresques el navegador el repositorio que creaste ya no estará vacío, y verás algo como:</li>
+</ul>
+
+<img data-src="images/repo6.png" class="r-stretch quarto-figure-center"></section>
+<section id="actualizando-nuestro-repositorio" class="slide level2 smaller">
+<h2>Actualizando nuestro repositorio</h2>
+<div>
+<ul>
+<li class="fragment">El procedimiento que acabamos de ver es necesario únicamente para la primera vez que empujamos al repositorio.</li>
+</ul>
+<!-- -   Cada vez que realices cambios locales (en tu PC), verás como van apareciendo archivos en la ventana de ambiente de Git listos para ser empujados. -->
+<ul>
+<li class="fragment"><p>Es decir, ya no necesitamos llevar a cabo la conexión entre nuestro repositorio local y el de Github.</p></li>
+<li class="fragment"><p>Basta entonces usar de aquí en adelante la GUI de RStudio, o comandos en la terminal.</p></li>
+<li class="fragment"><p>Para usar la GUI, al procedimiento anterior, lo terminamos haciendo click en <em>Push</em> (en la ventana de ambiente de Git).</p></li>
+<li class="fragment"><p>Para usar la terminal, cada vez que desees actualizar tu repositorio en Github, puedes usar estos comandos directamente en la terminal:</p></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>git add .</span>
+<span id="cb6-2"><a href="#cb6-2"></a>git commit <span class="sc">-</span>m <span class="st">"un comentario"</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>git push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="nuestra-primera-página-web-con-quarto" class="slide level2">
+<h2>Nuestra primera página web con Quarto</h2>
+<div>
+<ul>
+<li class="fragment"><p>Cómo te habrás dado cuenta, lo más difícil hasta el momento ha sido el vincular correctamente Github con RStudio.</p></li>
+<li class="fragment"><p>Una vez que lo hemos hecho, vamos a crear nuestra primera página web usando Quarto.</p></li>
 </ul>
 </div>
 
@@ -412,7 +784,7 @@ Mauricio Moreno, PhD
 <img src="images/icon.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -628,6 +1000,44 @@ Mauricio Moreno, PhD
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
