@@ -22,10 +22,9 @@ format:
       - pointer
 ---
 
-## Antes de comenzar...{.smaller}
+## Antes de comenzar... {.smaller}
 
 ::: incremental
-
 -   En este módulo final, veremos superficialmente el uso de la plataforma Github.
 
 -   El ambiente de Github puede llegar a ser abrumador por la cantidad de opciones y funcionalidades.
@@ -33,13 +32,12 @@ format:
 -   El objetivo de este curso es que los estudiantes entiendan su funcionamiento más básico en cuanto a su relación con la creación de reportes de Quarto, por lo tanto, entre los diversos temas que no son cubiertos aquí, puedo enlistar los siguientes:
 
     -   Control de versiones en Github (branches)
-    
-    -   Manejo de grupos de colaboración
-    
-    -   Comandos de Git
-    
-    -   Creación de librerías de R
 
+    -   Manejo de grupos de colaboración
+
+    -   Comandos de Git
+
+    -   Creación de librerías de R
 :::
 
 ## Introducción {.smaller}
@@ -92,13 +90,9 @@ format:
 -   Ya verificada la cuenta, podemos saltarnos la personalización.
 
 -   ¡Listo!
-
-
 :::
 
-
 ##  {background-image="images/github_page.png" background-size="1800px"}
-
 
 ## Paso 2: Instala Git {.smaller}
 
@@ -120,13 +114,13 @@ format:
 
 ![](images/verifica.png){fig-align="center"}
 
-## Paso 3: Verifica que Git se instaló {visibility="uncounted"}
+<!-- ## Paso 3: Verifica que Git se instaló {visibility="uncounted"} -->
 
--   Adicionalmente, deberá aparecer en la barra de acciones este ícono:
+<!-- -   Adicionalmente, ahora cuando crees un proyecto, deberá aparecerte la opción de hacerlo con un repositorio y deberá aparecer en la barra de acciones este ícono: -->
 
-![](images/git_r.png){fig-align="center"}
+<!-- ![](images/git_r.png){fig-align="center"} -->
 
--   En caso de que no aparezcan Git ni en las Opciones Globales o en la barra de acciones, desinstala Git y vuélvelo a instalar.
+<!-- -   En caso de que no aparezcan Git ni en las Opciones Globales o en la barra de acciones, desinstala Git y vuélvelo a instalar. -->
 
 ## Paso 4: Pero, ¿funciona?
 
@@ -142,7 +136,7 @@ format:
 
 ![](images/paso2.png){fig-align="center"}
 
-## Paso 4: Pero, ¿funciona? {visibility="uncounted" .smaller}
+## Paso 4: Pero, ¿funciona? {.smaller visibility="uncounted"}
 
 -   En el URL vamos a pegar este URL: https://github.com/mmorenozam/plantilla-tesis
 
@@ -153,7 +147,6 @@ format:
 ## Hasta el momento...
 
 ::: incremental
-
 -   Hemos (espero) creado exitosamente una cuenta en Github e instalado Git en nuestros computadores.
 
 -   Tenemos la posibilidad de clonar repositorios existentes.
@@ -163,13 +156,11 @@ format:
 -   Para esto, nos falta vincular nuestra cuenta de Github con RStudio.
 
 -   Sin embargo, haremos una pausa para ver el repositorio que hemos clonado.
-
 :::
 
 ## Escribiendo una tesis de grado en Quarto {.smaller}
 
 ::: incremental
-
 -   El repositorio que acabamos de clonar, contiene un template para llevar a cabo una tesis de grado.
 
 -   Realicé este template en base de la extensión `quarto-thesis` de autoría de [Eli Holmes](https://github.com/eeholmes){target="_blank"}.
@@ -177,13 +168,12 @@ format:
 -   Usando este template ya seremos capaces de redactar una tesis con:
 
     -   los nombres de sección traducidos al español
-    
+
     -   bibliografía en formato APA
-    
+
     -   índice, listas de figuras, listas de tablas, abreviaciones etc, generadas automáticamente en Quarto.
 
 -   Usa las funcionalidades de $\LaTeX{}$ para generar formatos elegantes y agradables a la vista, así como su muy eficiente indexación.
-
 :::
 
 . . .
@@ -191,9 +181,9 @@ format:
 -   Requisitos:
 
     -   Quarto version 1.3.450 (Llas más recientes contienen "bugs" que evitan una renderización adecuada).
-    
+
     -   Tinytex
-    
+
     -   (Idealmente) un mínimo conocimiento de edición de texto en $\LaTeX{}$
 
 # ¡Manos a la Obra!
@@ -201,7 +191,6 @@ format:
 ## Vinculando Github con RStudio
 
 ::: incremental
-
 -   Retomando, hasta el momento hemos instalado y configurado lo necesario tan solo para clonar repositorios.
 
 -   En el pasado, vincular Github con RStudio requería el ingresar comandos en el Terminal para configurar Git.
@@ -209,19 +198,14 @@ format:
 -   Afortunadamente, hoy por hoy podemos hacer uso de librerías que nos facilitan el proceso desde la consola de RStudio.
 
 -   Para esto, comenzamos instalando las librerías: `install.packages(c("usethis", "gitcreds", "oskeyring"))`.
-
 :::
 
 ## Paso 1: Creando credenciales {.smaller}
 
 ::: incremental
-
-
-
 -   Ahora, lo primero que haremos es configurar Git para que sepa la cuenta a vincular.
 
 -   Reiniciamos RStudio y pegamos el siguiente comando en la consola:
-
 :::
 
 . . .
@@ -233,9 +217,7 @@ usethis::use_git_config(user.name = "TuNombreDeUsuario", user.email = "tu@email.
 . . .
 
 ::: incremental
-
 -   El siguiente paso es crear un token personal:
-
 :::
 
 . . .
@@ -244,12 +226,9 @@ usethis::use_git_config(user.name = "TuNombreDeUsuario", user.email = "tu@email.
 usethis::create_github_token() 
 ```
 
-
 -   Este comando abrirá una página en tu navegador para que ingreses a Github con la cuenta que creaste
 
-
-
-## Paso 1: Vinculando Github con RStudio {visibility="uncounted" .smaller}
+## Paso 1: Vinculando Github con RStudio {.smaller visibility="uncounted"}
 
 -   Una vez que ingreses a tu cuenta, directamente te aparecerá la opción de crear un token:
 
@@ -263,8 +242,7 @@ usethis::create_github_token()
 
 -   Click en *Generate token*
 
-
-## Paso 1: Vinculando Github con RStudio {visibility="uncounted" .smaller}
+## Paso 1: Vinculando Github con RStudio {.smaller visibility="uncounted"}
 
 -   Tu token se mostrará en la pantalla con la opción de copiarlo
 
@@ -272,9 +250,9 @@ usethis::create_github_token()
 
 . . .
 
--   Esta es la UNICA vez que tendrás el chance de verlo. 
+-   Esta es la UNICA vez que tendrás el chance de verlo.
 
--   Cópialo por el momento en un block de notas. 
+-   Cópialo por el momento en un block de notas.
 
 -   Si no lo copias en esta única oportunidad, tendrás que generar otro.
 
@@ -292,7 +270,7 @@ gitcreds::gitcreds_set()
 
 ![](images/git4.png){fig-align="center"}
 
--   Pega tu token y enter. 
+-   Pega tu token y enter.
 
 ## Paso 3: Pero, ¿funciona?
 
@@ -311,30 +289,26 @@ usethis::gh_token_help()
 ## Empujando nuestro primer repositorio
 
 ::: incremental
-
 -   La mejor manera de comprobar que el vínculo/conexión entre tu RStudio y tu cuenta de Github, es "empujando" un repositorio en tu cuenta de Github.
 
 -   En resumen, lo que haremos es crear manualmente un repositorio vacío en Github y luego lo "poblaremos" con un projecto de RStudio (específicamente uno de Quarto).
 
 -   Para esto, puedes utilizar el repositorio con el template de la tesis que anteriormente clonamos (desde el paso 3) o hacerlo siguiendo los pasos desde el principio que mostraré a continuación.
-
 :::
 
 ## Paso 1: Creando un repositorio vacío en Github {.smaller}
 
--   En tu cuenta de Github: Click en la foto de tu avatar > *Your repositories* > *New*. Deberás llegar a una vista como la siguiente:
-
+-   En tu cuenta de Github: Click en la foto de tu avatar \> *Your repositories* \> *New*. Deberás llegar a una vista como la siguiente:
 
 ![](images/repo1.png){fig-align="center"}
 
-## Paso 1: Creando un repositorio vacío en Github {visibility="uncounted" .smaller}
-
+## Paso 1: Creando un repositorio vacío en Github {.smaller visibility="uncounted"}
 
 -   Una vez que le hayas dado un nombre a tu nuevo repositorio y dado click en *Create repository*, verás algo como:
 
 ![](images/repo2.png){fig-align="center"}
 
-## Paso 2: Creando un proyecto para empujar{.smaller}
+## Paso 2: Creando un proyecto para empujar {.smaller}
 
 -   De vuelta en RStudio, crearemos un proyecto de Quarto
 
@@ -345,15 +319,13 @@ usethis::gh_token_help()
 ## Paso 3: Empujando un proyecto a Github por primera vez
 
 ::: incremental
-
 -   Una vez creado el proyecto, tenemos dos opciones para empujar nuestro repositorio:
-    
+
     -   Usando únicamente el terminal
-    
+
     -   Usando la GUI de RStudio y el terminal
 
 -   En ambas opciones la lógica es "add/stage" los cambios, "commit", definir el origen y "push" (empujar).
-
 :::
 
 ## Paso 3.1: Empujando desde el terminal {.smaller}
@@ -373,7 +345,7 @@ git commit -m "un comentario"
 
 ![](images/repo4.png){fig-align="center"}
 
-## Paso 3.1: Empujando desde el terminal {visibility="uncounted" .smaller}
+## Paso 3.1: Empujando desde el terminal {.smaller visibility="uncounted"}
 
 -   Si todo salió bien, verás en el terminal algo como:
 
@@ -388,13 +360,11 @@ git commit -m "un comentario"
 . . .
 
 ::: incremental
-
--   El procedimiento a seguir aquí es: click en *Commit*>Seleccionar todos los archivos en la ventana que se abre>*Stage*>Añadir un comentario>*Commit*.
+-   El procedimiento a seguir aquí es: click en *Commit*\>Seleccionar todos los archivos en la ventana que se abre\>*Stage*\>Añadir un comentario\>*Commit*.
 
 -   Esto es equivalente a los comandos `git add .` y `git commit -m "un comentario"` que usamos anteriormente.
 
 -   De aquí, copiamos los comandos del repositorio vacío que anteriormente creamos, y los pegamos en la terminal.
-
 :::
 
 ## Paso 4: ¡Nuestro repositorio está listo! {.smaller}
@@ -406,7 +376,6 @@ git commit -m "un comentario"
 ## Actualizando nuestro repositorio {.smaller}
 
 ::: incremental
-
 -   El procedimiento que acabamos de ver es necesario únicamente para la primera vez que empujamos al repositorio.
 
 <!-- -   Cada vez que realices cambios locales (en tu PC), verás como van apareciendo archivos en la ventana de ambiente de Git listos para ser empujados. -->
@@ -418,7 +387,6 @@ git commit -m "un comentario"
 -   Para usar la GUI, al procedimiento anterior, lo terminamos haciendo click en *Push* (en la ventana de ambiente de Git).
 
 -   Para usar la terminal, cada vez que desees actualizar tu repositorio en Github, puedes usar estos comandos directamente en la terminal:
-
 :::
 
 . . .
@@ -433,12 +401,64 @@ git push
 
 ```
 
-## Nuestra primera página web con Quarto
+## Nuestra primera página web con Quarto {.smaller}
 
 ::: incremental
-
--   Cómo te habrás dado cuenta, lo más difícil hasta el momento ha sido el vincular correctamente Github con RStudio.
+-   Cómo te habrás dado cuenta, lo (quizás) más difícil hasta el momento ha sido el vincular correctamente Github con RStudio y Git.
 
 -   Una vez que lo hemos hecho, vamos a crear nuestra primera página web usando Quarto.
 
+-   Vamos a dirigirnos a *File* \> *New Project...* \> *New directory* \> *Quarto Website* \> Asignamos el lugar de nuestro repositorio localmente, marcamos la opción de *Create a Git repository* \> *Create project*
+
+-   En tu nuevo proyecto, notarás en la ventana de *Files* de RStudio se ha creado un archivo de nombre `_quarto.yml`. Este archivo contiene las instrucciones de tu proyecto. Lo único que haremos en este es añadir la línea `output-dir: docs` debajo de `type: website` de la siguiente manera:
 :::
+
+. . .
+
+```{r}
+#| echo: true
+#| eval: false
+
+project:
+  type: website
+  output-dir: docs
+
+```
+
+::: incremental
+Ahora, copiaremos la presentación que usamos de [ejemplo al final del módulo 6](https://raw.githubusercontent.com/mmorenozam/ejemplo_presentacion/main/ejemplo_presentacion.qmd){target="_blank"} en el documento de Quarto de este proyecto y renderizamos.
+:::
+
+## Nuestra primera página web con Quarto {.smaller visibility="uncounted"}
+
+::: incremental
+-   Ahora, crearemos un repositorio vacío en nuestro Github y empujaremos dentro de este nuestro proyecto recientemente creado.
+
+-   Para poner en línea nuestra página web con esta pequeña presentación, nos dirigimos ahora a Github a este repositorio ya poblado y seguimos *Settings* \> *Pages* (en el menú a la izquierda de nuestra pantalla) \> *Branch* \> Elegimos master (o main) y la opcion de `/docs` que está alado \> *Save*
+
+-   ¡Listo!, en unos minutos nuestra primera página web estará en línea
+
+-   Mientras esperamos, unos comentarios:
+
+    -   Github (así como otros servidores), sólamente permiten el alojamiento de páginas web estáticas.
+
+    -   Github tiene un almacenamiento máximo de tus proyectos de hasta 100 MB. Pasado este límite, necesitas abrir un plan de pagos.
+
+    -   Sin plan de pagos, todo lo que subas conjuntamente con tu proyecto, es abierto a todo el público. Si los datos de tu proyecto son confidenciales o sensibles, puedes especificar a Git que y que no debe subir usando el archivo `.gitgnore` que se crea en todo proyecto vinculado a un repositorio. [Un poco más de información aquí.](https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/){target="_blank"}
+:::
+
+# ¡Gracias!
+
+<!-- Con esto, terminamos el curso. En caso que quieras mantener contacto, puedes encontrarme en: -->
+
+::: {layout-ncol=3}
+
+[![](images/x1.png){fig-align="center" width="50"}](https://www.linkedin.com/in/mmorenozam/){target="_blank"}
+
+[![](images/git.png){fig-align="center" width="50"}](https://github.com/mmorenozam){target="_blank"}
+
+[![](images/x.png){fig-align="center" width="50"}](https://twitter.com/psignificant){target="_blank"}
+
+:::
+
+<!-- Así como también a mi correo electrónico ya compartido con anterioridad. -->

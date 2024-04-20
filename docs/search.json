@@ -123,7 +123,7 @@
     "href": "index.html#nuestra-primera-página-web-con-quarto",
     "title": "Módulo 7: La versatilidad de Quarto",
     "section": "Nuestra primera página web con Quarto",
-    "text": "Nuestra primera página web con Quarto\n\n\nCómo te habrás dado cuenta, lo más difícil hasta el momento ha sido el vincular correctamente Github con RStudio.\nUna vez que lo hemos hecho, vamos a crear nuestra primera página web usando Quarto."
+    "text": "Nuestra primera página web con Quarto\n\n\nCómo te habrás dado cuenta, lo (quizás) más difícil hasta el momento ha sido el vincular correctamente Github con RStudio y Git.\nUna vez que lo hemos hecho, vamos a crear nuestra primera página web usando Quarto.\nVamos a dirigirnos a File &gt; New Project… &gt; New directory &gt; Quarto Website &gt; Asignamos el lugar de nuestro repositorio localmente, marcamos la opción de Create a Git repository &gt; Create project\nEn tu nuevo proyecto, notarás en la ventana de Files de RStudio se ha creado un archivo de nombre _quarto.yml. Este archivo contiene las instrucciones de tu proyecto. Lo único que haremos en este es añadir la línea output-dir: docs debajo de type: website de la siguiente manera:\n\n\n\n\nproject:\n  type: website\n  output-dir: docs\n\n\nAhora, copiaremos la presentación que usamos de ejemplo al final del módulo 6 en el documento de Quarto de este proyecto y renderizamos."
   },
   {
     "objectID": "index.html#escribiendo-una-tesis-de-grado-en-quarto",
@@ -264,5 +264,19 @@
     "title": "Módulo 7: La versatilidad de Quarto",
     "section": "Antes de comenzar…",
     "text": "Antes de comenzar…\n\n\nEn este módulo final, veremos superficialmente el uso de la plataforma Github.\nEl ambiente de Github puede llegar a ser abrumador por la cantidad de opciones y funcionalidades.\nEl objetivo de este curso es que los estudiantes entiendan su funcionamiento más básico en cuanto a su relación con la creación de reportes de Quarto, por lo tanto, entre los diversos temas que no son cubiertos aquí, puedo enlistar los siguientes:\n\nControl de versiones en Github (branches)\nManejo de grupos de colaboración\nComandos de Git\nCreación de librerías de R"
+  },
+  {
+    "objectID": "index.html#nuestra-primera-página-web-con-quarto-1",
+    "href": "index.html#nuestra-primera-página-web-con-quarto-1",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Nuestra primera página web con Quarto",
+    "text": "Nuestra primera página web con Quarto\n\n\nAhora, crearemos un repositorio vacío en nuestro Github y empujaremos dentro de este nuestro proyecto recientemente creado.\nPara poner en línea nuestra página web con esta pequeña presentación, nos dirigimos ahora a Github a este repositorio ya poblado y seguimos Settings &gt; Pages (en el menú a la izquierda de nuestra pantalla) &gt; Branch &gt; Elegimos master (o main) y la opcion de /docs que está alado &gt; Save\n¡Listo!, en unos minutos nuestra primera página web estará en línea\nMientras esperamos, unos comentarios:\n\nGithub (así como otros servidores), sólamente permiten el alojamiento de páginas web estáticas.\nGithub tiene un almacenamiento máximo de tus proyectos de hasta 100 MB. Pasado este límite, necesitas abrir un plan de pagos.\nSin plan de pagos, todo lo que subas conjuntamente con tu proyecto, es abierto a todo el público. Si los datos de tu proyecto son confidenciales o sensibles, puedes especificar a Git que y que no debe subir usando el archivo .gitgnore que se crea en todo proyecto vinculado a un repositorio. Un poco más de información aquí."
+  },
+  {
+    "objectID": "index.html#gracias",
+    "href": "index.html#gracias",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "¡Gracias!",
+    "text": "¡Gracias!\nCon esto, terminamos el curso. En caso que quieras mantener contacto, puedes encontrarme en:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsí como también a mi correo electrónico ya compartido con anterioridad."
   }
 ]

@@ -487,17 +487,11 @@ Mauricio Moreno, PhD
 <li>Para verificar, abre Rstudio y sigue <em>Tools</em> &gt; <em>Global Options</em> &gt; <em>Git/SVN</em></li>
 </ul>
 
+<!-- ## Paso 3: Verifica que Git se instaló {visibility="uncounted"} -->
+<!-- -   Adicionalmente, ahora cuando crees un proyecto, deberá aparecerte la opción de hacerlo con un repositorio y deberá aparecer en la barra de acciones este ícono: -->
+<!-- ![](images/git_r.png){fig-align="center"} -->
+<!-- -   En caso de que no aparezcan Git ni en las Opciones Globales o en la barra de acciones, desinstala Git y vuélvelo a instalar. -->
 <img data-src="images/verifica.png" class="r-stretch quarto-figure-center"></section>
-<section id="paso-3-verifica-que-git-se-instaló-1" class="slide level2" data-visibility="uncounted">
-<h2>Paso 3: Verifica que Git se instaló</h2>
-<ul>
-<li>Adicionalmente, deberá aparecer en la barra de acciones este ícono:</li>
-</ul>
-
-<img data-src="images/git_r.png" class="r-stretch quarto-figure-center"><ul>
-<li>En caso de que no aparezcan Git ni en las Opciones Globales o en la barra de acciones, desinstala Git y vuélvelo a instalar.</li>
-</ul>
-</section>
 <section id="paso-4-pero-funciona" class="slide level2">
 <h2>Paso 4: Pero, ¿funciona?</h2>
 <ul>
@@ -787,20 +781,72 @@ Mauricio Moreno, PhD
 </div>
 </div>
 </section>
-<section id="nuestra-primera-página-web-con-quarto" class="slide level2">
+<section id="nuestra-primera-página-web-con-quarto" class="slide level2 smaller">
 <h2>Nuestra primera página web con Quarto</h2>
 <div>
 <ul>
-<li class="fragment"><p>Cómo te habrás dado cuenta, lo más difícil hasta el momento ha sido el vincular correctamente Github con RStudio.</p></li>
+<li class="fragment"><p>Cómo te habrás dado cuenta, lo (quizás) más difícil hasta el momento ha sido el vincular correctamente Github con RStudio y Git.</p></li>
 <li class="fragment"><p>Una vez que lo hemos hecho, vamos a crear nuestra primera página web usando Quarto.</p></li>
+<li class="fragment"><p>Vamos a dirigirnos a <em>File</em> &gt; <em>New Project…</em> &gt; <em>New directory</em> &gt; <em>Quarto Website</em> &gt; Asignamos el lugar de nuestro repositorio localmente, marcamos la opción de <em>Create a Git repository</em> &gt; <em>Create project</em></p></li>
+<li class="fragment"><p>En tu nuevo proyecto, notarás en la ventana de <em>Files</em> de RStudio se ha creado un archivo de nombre <code>_quarto.yml</code>. Este archivo contiene las instrucciones de tu proyecto. Lo único que haremos en este es añadir la línea <code>output-dir: docs</code> debajo de <code>type: website</code> de la siguiente manera:</p></li>
 </ul>
 </div>
-
-
-<img src="images/icon.png" class="slide-logo r-stretch"><div class="footer footer-default">
-
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>project<span class="sc">:</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>  type<span class="sc">:</span> website</span>
+<span id="cb7-3"><a href="#cb7-3"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div>
+<p>Ahora, copiaremos la presentación que usamos de <a href="https://raw.githubusercontent.com/mmorenozam/ejemplo_presentacion/main/ejemplo_presentacion.qmd" target="_blank">ejemplo al final del módulo 6</a> en el documento de Quarto de este proyecto y renderizamos.</p>
+</div>
+</div>
+</section>
+<section id="nuestra-primera-página-web-con-quarto-1" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Nuestra primera página web con Quarto</h2>
+<div>
+<ul>
+<li class="fragment"><p>Ahora, crearemos un repositorio vacío en nuestro Github y empujaremos dentro de este nuestro proyecto recientemente creado.</p></li>
+<li class="fragment"><p>Para poner en línea nuestra página web con esta pequeña presentación, nos dirigimos ahora a Github a este repositorio ya poblado y seguimos <em>Settings</em> &gt; <em>Pages</em> (en el menú a la izquierda de nuestra pantalla) &gt; <em>Branch</em> &gt; Elegimos master (o main) y la opcion de <code>/docs</code> que está alado &gt; <em>Save</em></p></li>
+<li class="fragment"><p>¡Listo!, en unos minutos nuestra primera página web estará en línea</p></li>
+<li class="fragment"><p>Mientras esperamos, unos comentarios:</p>
+<ul>
+<li class="fragment"><p>Github (así como otros servidores), sólamente permiten el alojamiento de páginas web estáticas.</p></li>
+<li class="fragment"><p>Github tiene un almacenamiento máximo de tus proyectos de hasta 100 MB. Pasado este límite, necesitas abrir un plan de pagos.</p></li>
+<li class="fragment"><p>Sin plan de pagos, todo lo que subas conjuntamente con tu proyecto, es abierto a todo el público. Si los datos de tu proyecto son confidenciales o sensibles, puedes especificar a Git que y que no debe subir usando el archivo <code>.gitgnore</code> que se crea en todo proyecto vinculado a un repositorio. <a href="https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/" target="_blank">Un poco más de información aquí.</a></p></li>
+</ul></li>
+</ul>
 </div>
 </section></section>
+<section id="gracias" class="title-slide slide level1 center">
+<h1>¡Gracias!</h1>
+<!-- Con esto, terminamos el curso. En caso que quieras mantener contacto, puedes encontrarme en: -->
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
+<figure>
+<p><a href="https://www.linkedin.com/in/mmorenozam/" target="_blank"><img data-src="images/x1.png" width="50"></a></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
+<figure>
+<p><a href="https://github.com/mmorenozam" target="_blank"><img data-src="images/git.png" width="50"></a></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
+<figure>
+<p><a href="https://twitter.com/psignificant" target="_blank"><img data-src="images/x.png" width="50"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<!-- Así como también a mi correo electrónico ya compartido con anterioridad. -->
+
+<p><img src="images/icon.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</section>
     </div>
   </div>
 
