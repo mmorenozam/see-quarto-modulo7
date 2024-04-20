@@ -257,5 +257,12 @@
     "title": "Módulo 7: La versatilidad de Quarto",
     "section": "Actualizando nuestro repositorio",
     "text": "Actualizando nuestro repositorio\n\n\nEl procedimiento que acabamos de ver es necesario únicamente para la primera vez que empujamos al repositorio.\n\n\n\nEs decir, ya no necesitamos llevar a cabo la conexión entre nuestro repositorio local y el de Github.\nBasta entonces usar de aquí en adelante la GUI de RStudio, o comandos en la terminal.\nPara usar la GUI, al procedimiento anterior, lo terminamos haciendo click en Push (en la ventana de ambiente de Git).\nPara usar la terminal, cada vez que desees actualizar tu repositorio en Github, puedes usar estos comandos directamente en la terminal:\n\n\n\n\ngit add .\ngit commit -m \"un comentario\"\ngit push"
+  },
+  {
+    "objectID": "index.html#antes-de-comenzar",
+    "href": "index.html#antes-de-comenzar",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Antes de comenzar…",
+    "text": "Antes de comenzar…\n\n\nEn este módulo final, veremos superficialmente el uso de la plataforma Github.\nEl ambiente de Github puede llegar a ser abrumador por la cantidad de opciones y funcionalidades.\nEl objetivo de este curso es que los estudiantes entiendan su funcionamiento más básico en cuanto a su relación con la creación de reportes de Quarto, por lo tanto, entre los diversos temas que no son cubiertos aquí, puedo enlistar los siguientes:\n\nControl de versiones en Github (branches)\nManejo de grupos de colaboración\nComandos de Git\nCreación de librerías de R"
   }
 ]

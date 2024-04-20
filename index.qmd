@@ -22,6 +22,26 @@ format:
       - pointer
 ---
 
+## Antes de comenzar...{.smaller}
+
+::: incremental
+
+-   En este módulo final, veremos superficialmente el uso de la plataforma Github.
+
+-   El ambiente de Github puede llegar a ser abrumador por la cantidad de opciones y funcionalidades.
+
+-   El objetivo de este curso es que los estudiantes entiendan su funcionamiento más básico en cuanto a su relación con la creación de reportes de Quarto, por lo tanto, entre los diversos temas que no son cubiertos aquí, puedo enlistar los siguientes:
+
+    -   Control de versiones en Github (branches)
+    
+    -   Manejo de grupos de colaboración
+    
+    -   Comandos de Git
+    
+    -   Creación de librerías de R
+
+:::
+
 ## Introducción {.smaller}
 
 ::: incremental
