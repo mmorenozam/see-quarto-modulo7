@@ -130,7 +130,7 @@
     "href": "index.html#escribiendo-una-tesis-de-grado-en-quarto",
     "title": "Módulo 7: La versatilidad de Quarto",
     "section": "Escribiendo una tesis de grado en Quarto",
-    "text": "Escribiendo una tesis de grado en Quarto\n\n\nEl repositorio que acabamos de clonar, contiene un template para llevar a cabo una tesis de grado.\nRealicé este template en base de la extensión quarto-thesis de autoría de Eli Holmes.\nUsando este template ya seremos capaces de redactar una tesis con:\n\nlos nombres de sección traducidos al español\nbibliografía en formato APA\níndice, listas de figuras, listas de tablas, abreviaciones etc, generadas automáticamente en Quarto.\n\nUsa las funcionalidades de \\(\\LaTeX{}\\) para generar formatos elegantes y agradables a la vista, así como su muy eficiente indexación.\n\n\n\n\nRequisitos:\n\nQuarto version 1.3.450 (Llas más recientes contienen “bugs” que evitan una renderización adecuada).\nTinytex\n(Idealmente) un mínimo conocimiento de edición de texto en \\(\\LaTeX{}\\)"
+    "text": "Escribiendo una tesis de grado en Quarto\n\n\nEl repositorio que acabamos de clonar, contiene un template para llevar a cabo una tesis de grado.\nRealicé este template en base de la extensión quarto-thesis de autoría de Eli Holmes.\nUsando este template ya seremos capaces de redactar una tesis con:\n\nlos nombres de sección traducidos al español\nbibliografía en formato APA\níndice, listas de figuras, listas de tablas, abreviaciones etc, generadas automáticamente en Quarto.\n\nUsa las funcionalidades de \\(\\LaTeX{}\\) para generar formatos elegantes y agradables a la vista, así como su muy eficiente indexación.\n\n\n\n\nRequisitos:\n\nQuarto version 1.3.450 (Llas más recientes contienen “bugs” que evitan una renderización adecuada).\nTinytex\n(Idealmente) un mínimo conocimiento de edición de texto en \\(\\LaTeX{}\\)\n(Opcional) Zotero para manejo de referencias bibliográficas"
   },
   {
     "objectID": "index.html#vinculando-github-con-rstudio",
@@ -278,5 +278,19 @@
     "title": "Módulo 7: La versatilidad de Quarto",
     "section": "¡Gracias!",
     "text": "¡Gracias!\nCon esto, terminamos el curso. En caso que quieras mantener contacto, puedes encontrarme en:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsí como también a mi correo electrónico ya compartido con anterioridad."
+  },
+  {
+    "objectID": "index.html#manejo-de-ibliografía",
+    "href": "index.html#manejo-de-ibliografía",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Manejo de ibliografía",
+    "text": "Manejo de ibliografía\n\n\nEn general, para hacer uso de referencias bibliográficas, Quarto utiliza biblatex o biber que son paquetes de \\(\\LaTeX{}\\).\nEstos se basan en archivos de extensión .bib donde las referencias son almacenadas en lenguage \\(\\TeX{}\\).\nPara mantener nuestra “biblioteca” bien podemos usar un editor de texto y modificar manualmente nuestro archivo .bib o\nHacer uso de algún software que nos ayude a manejar nuestras colecciones de referencias. El único requisito, es que este software sea capaz de generar archivos .bib.\nZotero es de amplio uso, licencia libre, y además cuenta con un plugin de Chrome para extraer referencias automáticamente de páginas web."
+  },
+  {
+    "objectID": "index.html#manejo-de-bibliografía",
+    "href": "index.html#manejo-de-bibliografía",
+    "title": "Módulo 7: La versatilidad de Quarto",
+    "section": "Manejo de Bibliografía",
+    "text": "Manejo de Bibliografía\n\n\nEn general, para hacer uso de referencias bibliográficas, Quarto utiliza biblatex o biber que son paquetes de \\(\\LaTeX{}\\).\nEstos se basan en archivos de extensión .bib donde las referencias son almacenadas en lenguage \\(\\TeX{}\\).\nPara mantener nuestra “biblioteca” bien podemos usar un editor de texto y modificar manualmente nuestro archivo .bib o\nHacer uso de algún software que nos ayude a manejar nuestras colecciones de referencias.\nEntre estos, Zotero es recomendado ya que tiene conexión automática con el editor visual de Quarto.\nSin embargo, en esta plantilla en particular, debemos explícitamente contar con un archivo .bib, por lo que bien podrías usar otro software capaz de generarlo (Mendeley por ejemplo).\nIndependientemente del software con el que manejes tus citas, el único requisito para usarlo con esta plantilla, es que sea capaz de generar archivos .bib."
   }
 ]

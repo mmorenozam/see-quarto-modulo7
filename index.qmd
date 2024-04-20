@@ -20,6 +20,7 @@ format:
       buttons: false
     revealjs-plugins:
       - pointer
+bibliography: references.bib
 ---
 
 ## Antes de comenzar... {.smaller}
@@ -185,6 +186,26 @@ format:
     -   Tinytex
 
     -   (Idealmente) un mínimo conocimiento de edición de texto en $\LaTeX{}$
+
+    -   (Opcional) Zotero para manejo de referencias bibliográficas
+
+## Manejo de Bibliografía {.smaller}
+
+::: incremental
+-   En general, para hacer uso de referencias bibliográficas, Quarto utiliza `biblatex` o `biber` que son paquetes de $\LaTeX{}$.
+
+-   Estos se basan en archivos de extensión `.bib` donde las referencias son almacenadas en lenguage $\TeX{}$.
+
+-   Para mantener nuestra "biblioteca" bien podemos usar un editor de texto y modificar manualmente nuestro archivo `.bib` o
+
+-   Hacer uso de algún software que nos ayude a manejar nuestras colecciones de referencias.
+
+-   Entre estos, Zotero es recomendado ya que tiene conexión automática con el editor visual de Quarto.
+
+-   Sin embargo, en esta plantilla en particular, debemos explícitamente contar con un archivo `.bib`, por lo que bien podrías usar otro software capaz de generarlo (Mendeley por ejemplo).
+
+-   Independientemente del software con el que manejes tus citas, el único requisito para usarlo con esta plantilla, es que sea capaz de generar archivos `.bib`.
+:::
 
 # ¡Manos a la Obra!
 
@@ -451,14 +472,12 @@ Ahora, copiaremos la presentación que usamos de [ejemplo al final del módulo 6
 
 <!-- Con esto, terminamos el curso. En caso que quieras mantener contacto, puedes encontrarme en: -->
 
-::: {layout-ncol=3}
+::: {layout-ncol="3"}
+[![](images/x1.png){fig-align="center" width="50"}](https://www.linkedin.com/in/mmorenozam/)
 
-[![](images/x1.png){fig-align="center" width="50"}](https://www.linkedin.com/in/mmorenozam/){target="_blank"}
+[![](images/git.png){fig-align="center" width="50"}](https://github.com/mmorenozam)
 
-[![](images/git.png){fig-align="center" width="50"}](https://github.com/mmorenozam){target="_blank"}
-
-[![](images/x.png){fig-align="center" width="50"}](https://twitter.com/psignificant){target="_blank"}
-
+[![](images/x.png){fig-align="center" width="50"}](https://twitter.com/psignificant)
 :::
 
 <!-- Así como también a mi correo electrónico ya compartido con anterioridad. -->
